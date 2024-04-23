@@ -8,6 +8,8 @@ Based on the above, write a Monte Carlo simulator of this scenario that can then
 
 This is a queuing system. We need to model the input and output processes. 
 
+
+**input/arrival process**
 input/arrival process - the description of arrival of entities to the system.
 
     Inter-arrival time is the time between arrival of consecutive entities.
@@ -19,3 +21,12 @@ the arrival process is usually given in terms of averages. Thats is, average arr
 Entity arrival is considered random if an average is provided. The average arrival is not enough for us to simulate the process, we need a measure of spread (stdev or variance). Ultimately, we can simulate the (randomness of the) arrival process using the arrival's underlying distribution.
 
 https://www.youtube.com/watch?v=UoKFNAJt3a4&list=PLmTO3lWcV3Jm4y1C17kO6milMjUfDIjXX&index=7
+
+**Failure rate**
+lambda is the failure rate, the number of failures per unit time.
+E['x'] = 1/lambda, this is the mean time until first failure.
+
+The expected number of failures that will occur in a specific period of time
+The expected loss of service capacity due to failure
+
+The mean or expected value of a random variable is the integral from negative infinity to infinity of the product of the random variable and its probability density function
